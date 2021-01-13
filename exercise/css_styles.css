@@ -1,0 +1,49 @@
+* {
+  border: 1px dashed black;
+}
+
+html {
+  background-color: chocolate;
+}
+
+body {
+  margin: 20px 100px 10px 50px;
+  padding: 20px;
+  background-color: mintcream;
+}
+
+h1 {
+  color: chocolate;
+  text-decoration: underline;
+  font-family: fantasy;
+  font-size: 40px;
+}
+
+p {
+  color: gray;
+}
+
+div {
+  margin: 20px 15px;
+  border: 2px solid black;
+  height: 150px;
+  width: 150px;
+  background-color: lightcoral;
+}
+
+#first {
+  color: cyan;
+  background-color: crimson;
+}
+#second {
+  background-color: darkcyan;
+}
+#third {
+  color: blueviolet;
+  background-color: burlywood;
+}
+span {
+  background-color: burlywood;
+  margin: 30px;
+  padding: 20px;
+}

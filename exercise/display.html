@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <title>Display</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        margin: 20px;
+        background: ivory;
+        position: relative;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: teal;
+        padding: 10px;
+        border: solid 1px black;
+        margin: 20px;
+      }
+
+      .inline-block {
+        display: inline-block;
+      }
+      .flex_container1 {
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+      .flex_container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: ivory;
+      }
+      #position_fixed {
+        top: 50px;
+        right: 200px;
+        position: fixed;
+        background-color: khaki;
+      }
+      #position_relative {
+        position: relative;
+        background-color: lightpink;
+        top: 40px;
+        left: -20px;
+      }
+      #position_absolute {
+        position: absolute;
+        background-color: magenta;
+        margin: 0px;
+        right: 0px;
+        bottom: 0px;
+      }
+      section > span:nth-child(odd) {
+        background-color: cadetblue;
+      }
+      section > span:nth-child(even) {
+        background-color: burlywood;
+      }
+      p span {
+        text-decoration: underline;
+        background-color: gold;
+      }
+      button:hover {
+        background-color: yellow;
+      }
+      button:active {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="inline-block">inline-block</div>
+      <div class="inline-block">inline-block</div>
+      <div class="inline-block">inline-block</div>
+    </section>
+
+    <div id="position_fixed">position fixed</div>
+    <div id="position_relative">position relative</div>
+    <div id="position_absolute">position absolute</div>
+
+    <section class="flex_container1">
+      <div class="flex_container2">flex box</div>
+      <div class="flex_container2">flex box</div>
+      <div class="flex_container2">flex box</div>
+    </section>
+
+    <p>This is about <span>combinator & Pseudo selecotor</span></p>
+
+    <section>
+      <span>hello!</span>
+      <span>hello!</span>
+      <span>hello!</span>
+      <span>hello!</span>
+      <span>hello!</span>
+      <span>hello!</span>
+      <span>hello!</span>
+      <span>hello!</span>
+      <span>hello!</span>
+      <span>hello!</span>
+    </section>
+
+    <button>click!</button>
+  </body>
+</html>
