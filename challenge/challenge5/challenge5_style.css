@@ -5,8 +5,10 @@
   --main-color: black;
   --font-color: white;
   --sub-color: white;
-  --border-color: gray;
-  --point-color: red;
+  --border-color: white;
+  --point-color: coral;
+  --high-color: violet;
+  --button-color: gray;
 }
 
 body {
@@ -16,15 +18,16 @@ body {
   flex-direction: column-reverse;
   align-items: center;
   font-weight: bold;
-  color: black;
+  color: var(--sub-color);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .playlist-window {
   width: 400px;
   height: 800px;
   padding: 10px 20px;
-  background-color: white;
-  border: 5px solid gray;
+  background-color: var(--main-color);
+  border: 3px solid var(--high-color);
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
@@ -35,7 +38,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--border-color);
 }
 .playlist-header__element {
   font-size: x-large;
@@ -57,8 +60,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid black;
-  box-shadow: 0 3px black;
+  border: 3px solid var(--point-color);
+  box-shadow: 0 3px var(--point-color);
 }
 .button__play {
   width: 200px;
@@ -67,6 +70,9 @@ body {
 }
 .button__play span {
   margin: 0 6px;
+}
+.button__play span:first-child {
+  color: var(--high-color);
 }
 .button__like-plus {
   width: 60px;
@@ -78,11 +84,12 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 .main__album-cover {
   width: 150px;
   height: 150px;
-  border: 3px solid black;
+  border: 3px solid var(--border-color);
   border-radius: 20%;
 }
 .main__text {
@@ -96,7 +103,8 @@ body {
   font-size: xx-large;
 }
 .main__text span:last-child {
-  font-size: large;
+  font-size: small;
+  font-style: italic;
 }
 
 .playlist {
@@ -108,14 +116,14 @@ body {
 .playlist__column {
   display: flex;
   justify-content: flex-start;
-  border-top: 2px solid black;
+  border-top: 2px solid var(--border-color);
   padding-top: 10px;
   padding-bottom: 12px;
 }
 .playlist__album-cover {
   width: 60px;
   height: 60px;
-  border: 3px solid black;
+  border: 3px solid var(--sub-color);
   border-radius: 20%;
   margin-right: 20px;
 }
@@ -125,10 +133,30 @@ body {
   flex-direction: column;
 }
 .playlist__column__text span:first-child {
-  font-size: x-large;
+  font-size: large;
 }
 .playlist__column__text span:last-child {
-  font-size: large;
+  font-size: small;
   font-weight: normal;
   font-style: italic;
+}
+.playlist__column:last-child {
+  border-bottom: 2px groove var(--high-color);
+}
+
+.playbutton-box {
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.playbutton {
+  width: 40px;
+  height: 40px;
+  opacity: 80%;
+  color: var(--sub-color);
+}
+
+.playbutton:hover {
+  opacity: 100%;
+  color: var(--high-color);
 }
