@@ -1,5 +1,7 @@
 @import "challenge6_top.css";
 @import "challenge6_main.css";
+@import "challenge6_middle.css";
+@import "challenge6_bottom.css";
 
 * {
   box-sizing: border-box;
@@ -9,11 +11,9 @@ body {
   justify-content: center;
 }
 .wrapper {
+  box-sizing: border-box;
   width: 340px;
   display: flex;
   flex-direction: column;
-}
-
-.stars {
-  color: yellow;
+  padding: 0 20px;
 }

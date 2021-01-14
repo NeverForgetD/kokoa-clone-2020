@@ -1,7 +1,6 @@
 .main-book {
   display: flex;
   box-sizing: border-box;
-  padding: 0 20px;
   justify-content: space-between;
   flex-direction: column;
   height: 200px;
@@ -26,6 +25,11 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.stars__main {
+  color: yellow;
+}
+
 .main-book__btn-box {
   display: flex;
   justify-content: space-between;

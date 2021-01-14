@@ -10,21 +10,26 @@ input:focus {
 }
 
 .header__box {
-    width: 100%;
+    width: 340px;
     height: 100px;
-    background-color: yellow;
+    background-color: coral;
   }
   
   .header__text {
     margin: 30px 10px;
-  
+    font-size: 20px;
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
   }
   
   .search-engine {
+    position: relative;
+    right: -20px;
+    top:-25px;
+    background-color: white;
     box-sizing: border-box;
-    width: 340px;
+    width: 300px;
     height: 50px;
     padding: 18px 12px;
     border: 1px solid black;
