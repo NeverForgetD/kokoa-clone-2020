@@ -2,13 +2,14 @@
 @import "challenge6_main.css";
 @import "challenge6_middle.css";
 @import "challenge6_bottom.css";
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
 * {
   box-sizing: border-box;
 }
 body {
   display: flex;
   justify-content: center;
+  font-family: "Open Sans", sans-serif;
 }
 .wrapper {
   box-sizing: border-box;
@@ -16,4 +17,25 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+}
+main {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+.title2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.title3 {
+  opacity: 50%;
+}
+p {
+  line-height: 20px;
 }

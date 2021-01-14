@@ -1,20 +1,24 @@
 .books {
+  width: 300px;
   display: flex;
-  height: 180px;
+  height: 200px;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 15px;
 }
 .books__row {
-  height: 150px;
+  height: 180px;
   width: 300px;
+  margin: 20px 0;
   display: flex;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 .books__column {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  width: 70px;
+  width: 90px;
   margin-right: 20px;
 }
 .books__cover {
@@ -23,7 +27,6 @@
   border-radius: 10px;
 }
 .stars {
-  margin-top: 5px;
   color: coral;
   font-size: 10px;
   width: 70px;
