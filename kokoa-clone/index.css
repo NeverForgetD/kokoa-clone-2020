@@ -1,32 +1,59 @@
+@import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-
-:root {
-  --main-color: rgb(250, 225, 0);
-}
+@import "status-bar.css";
+@import "color.css";
 
 body {
-  background-color: var(--main-color);
   font-family: "Open Sans", sans-serif;
 }
 
-.status-bar {
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-.status-bar__column {
-  width: 33%;
+.welcome-header__title {
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-weight: 600;
 }
-.status-bar__column:first-child span {
-  margin-right: 5px;
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
 }
-.status-bar__column:nth-child(2) {
+
+.login-form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  margin: 0 30px;
 }
-.status-bar__column:last-child {
-  display: flex;
-  justify-content: flex-end;
+.login-form input::placeholder {
+  color: rgb(0, 0, 0, 0.4);
 }
-.status-bar__column .fa-battery-three-quarters {
-  margin: 2px 5px;
+.login-form input {
+  border: none;
+  padding: 15px 5px;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+  transition: border-color 0.3s ease-in-out;
+}
+.login-form input:not([type="submit"]):focus {
+  border-color: var(--main-color);
+}
+.login-form input[type="submit"] {
+  background-color: var(--main-color);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
 }
