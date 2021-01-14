@@ -1,0 +1,64 @@
+.main-book {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 20px;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 200px;
+}
+.main-book__content {
+  display: flex;
+  justify-content: flex-start;
+  height: 160px;
+  width: 300px;
+}
+.main-book__cover {
+  box-sizing: border-box;
+  width: 110px;
+  height: 160px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.main-book__text {
+  margin-left: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-book__btn-box {
+  display: flex;
+  justify-content: space-between;
+}
+.main-book__btn {
+  width: 70px;
+  height: 24px;
+  background-color: forestgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-book__last {
+  display: flex;
+  justify-content: space-between;
+}
+.main-book__last div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bookmark-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.book-now {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}

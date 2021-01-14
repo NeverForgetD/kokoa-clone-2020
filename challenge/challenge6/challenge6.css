@@ -1,0 +1,19 @@
+@import "challenge6_top.css";
+@import "challenge6_main.css";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stars {
+  color: yellow;
+}
