@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
 :root {
-  --main-color: black;
+  --main-color: rgb(255, 255, 255, 0.5);
+  --sub-color: rgb(255, 255, 255, 0.8);
 }
 
 body {
@@ -11,7 +14,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rosybrown;
+  background-color: coral;
+  font-family: "Comfortaa", cursive;
 }
 
 .player {
@@ -23,10 +27,29 @@ body {
   margin: 0 50px;
   display: flex;
   flex-direction: column;
-  background-color: seashell;
   align-items: center;
+  position: relative;
+  border: 3px solid black;
 }
 
+.player::after {
+  border-radius: 50px;
+  content: "";
+  background-image: url("q.jfif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 .header {
   box-sizing: border-box;
   width: 320px;
@@ -46,15 +69,17 @@ body {
   height: 90px;
   border-radius: 50%;
   margin-bottom: 40px;
+  border: 2px solid black;
 }
 .artist__name {
   font-size: 25px;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .artist__genre {
   margin-bottom: 40px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .btn-box {
@@ -78,7 +103,10 @@ body {
   color: white;
 }
 .btn:last-child {
-  background-color: springgreen;
+  background-color: var(--main-color);
+}
+.btn:last-child span {
+  margin-left: 3px;
 }
 
 .song {
@@ -93,8 +121,9 @@ body {
   margin-bottom: 5px;
   display: flex;
   align-items: center;
-  background-color: tan;
+  background-color: var(--main-color);
   border-radius: 20px;
+  position: relative;
 }
 
 .song__row__cover {
@@ -111,7 +140,7 @@ body {
 
 .song__text span:first-child {
   font-size: 15px;
-  color: tomato;
+  color: coral;
 }
 .song__text span:last-child {
   font-size: 20px;
@@ -119,7 +148,13 @@ body {
 }
 
 .selected {
-  background-color: thistle;
+  background-color: var(--sub-color);
+}
+
+.now-playing {
+  position: absolute;
+  right: 30px;
+  color: rgb(0, 0, 0, 0.2);
 }
 
 .playing-box {
@@ -127,7 +162,7 @@ body {
   width: 340px;
   height: 70px;
   border-radius: 30px;
-  background-color: black;
+  background-color: rgb(0, 0, 0, 0.8);
   margin: 15px 0;
   display: flex;
   justify-content: space-between;
@@ -139,6 +174,7 @@ body {
 }
 
 .playing span:last-child {
+  font-weight: bold;
   color: white;
 }
 
@@ -155,14 +191,13 @@ body {
 
 .playing__title {
   margin-top: 70px;
-  font-size: 20px;
+  font-size: 32px;
   font-weight: bold;
 }
 
 .playing__artist {
   margin-top: 25px;
-  font-size: 15px;
-  color: tomato;
+  font-size: 20px;
 }
 
 .bar {
@@ -176,15 +211,18 @@ body {
   width: 300px;
   display: flex;
   justify-content: space-between;
-  color: tomato;
+  color: black;
 }
 
 input[type="range"] {
   width: 310px;
+  height: 5px;
 }
 
 .key {
   margin-top: 50px;
+  display: flex;
+  align-items: center;
 }
 .key__1 {
   margin: 0 10px;
@@ -193,5 +231,5 @@ input[type="range"] {
   margin: 0 30px;
 }
 .key__3 {
-  color: tomato;
+  color: rgb(0, 0, 0, 0.4);
 }
