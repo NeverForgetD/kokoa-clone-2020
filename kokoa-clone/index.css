@@ -4,14 +4,17 @@
 
 /* Components */
 @import "components/status-bar.css";
-@import "components/color.css";
 @import "components/nav.css";
-
+@import "components/screen-header.css";
+@import "components/user-component.css";
 /* Screens */
+@import "screens/variables.css";
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
   font-family: "Open Sans", sans-serif;
+  color: rgb(0, 0, 0, 0.8);
 }
 
 .welcome-header {
