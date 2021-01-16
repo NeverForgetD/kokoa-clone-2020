@@ -9,9 +9,11 @@
 body {
   display: flex;
   justify-content: center;
+
   font-family: "Open Sans", sans-serif;
 }
 .wrapper {
+  margin-top: 80px;
   box-sizing: border-box;
   width: 340px;
   display: flex;
