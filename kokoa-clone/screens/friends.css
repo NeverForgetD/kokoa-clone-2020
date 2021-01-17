@@ -24,3 +24,28 @@
   justify-content: space-between;
   color: var(--gray-color);
 }
+
+@keyframes hide-splash-screen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+  }
+}
+
+#splash-screen {
+  background-color: var(--main-color);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hide-splash-screen 0.4s ease-in-out forwards;
+  animation-delay: 1s;
+}
