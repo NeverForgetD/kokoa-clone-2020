@@ -1,3 +1,4 @@
+/* font */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 @import "reset.css";
@@ -54,4 +55,12 @@ body {
 .welcome-header__text:last-child {
   margin-top: 15px;
   font-size: 14px;
+}
+
+.dig {
+  position: absolute;
+  top: 390vh;
+  right: 100px;
+  width: 200px;
+  height: 200px;
 }
