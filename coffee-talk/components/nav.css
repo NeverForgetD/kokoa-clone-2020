@@ -11,6 +11,7 @@
 .nav__list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav__link i {
@@ -18,9 +19,9 @@
 }
 
 .nav__btn {
-  transform: translateY(-50px;);
   position: relative;
   animation: appearBtnAnimation 1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav__notifiation {
@@ -54,14 +55,18 @@
 }
 
 .nav__btn:first-child {
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
 }
 .nav__btn:nth-child(2) {
-  animation-delay: 0.6s;
+  animation-delay: 0.4s;
 }
 .nav__btn:nth-child(3) {
-  animation-delay: 0.8s;
+  animation-delay: 0.6s;
 }
 .nav__btn:nth-child(4) {
-  animation-delay: 1s;
+  animation-delay: 0.8s;
+}
+
+.nav__btn:hover {
+  transform: scale(1.2);
 }
