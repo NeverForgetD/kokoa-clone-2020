@@ -49,3 +49,24 @@
 .fa-comment-alt:hover {
   animation: big-small 0.5s ease-in-out;
 }
+
+.alt-header__column .fa-search {
+  cursor: pointer;
+}
+.alt-header__column .fa-search:hover {
+  animation: tiltAnimation 0.5s ease-in-out;
+}
+
+.alt-header__column .fa-angle-left {
+  transition: all 0.2s ease-in-out;
+}
+.alt-header__column .fa-angle-left:hover {
+  transform: scale(1.2);
+}
+
+.alt-header__column .fa-bars {
+  transition: all 0.2s ease-in-out;
+}
+.alt-header__column .fa-bars:hover {
+  transform: scaleY(1.5);
+}

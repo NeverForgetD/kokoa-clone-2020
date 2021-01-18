@@ -1,5 +1,5 @@
 #chat-screen {
-  background-color: lightcoral;
+  background-color: var(--main-color-light);
   height: 500vh;
 }
 
@@ -9,7 +9,7 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  background-color: lightcoral;
+  background-color: var(--main-color-light);
 }
 
 #chat-screen .alt-header {
@@ -32,17 +32,16 @@
 }
 
 .main-chat {
-  margin-top: 150px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
   text-align: center;
-  color: white;
-  background-color: darkcyan;
+  color: var(--light-color);
+  background-color: var(--main-color);
   font-size: 14px;
   padding: 15px;
   border-radius: 25px;
@@ -55,7 +54,7 @@
   margin-bottom: 25px;
 }
 
-.message-row img {
+.message-row img[src="images/chico.png"] {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -75,12 +74,13 @@
 }
 
 .message__bubble {
-  background-color: white;
+  background-color: var(--main-color-light);
   padding: 13px;
   border-radius: 15px;
   margin-right: 5px;
   border-top-left-radius: 0;
   font-size: 18px;
+  border: 1px solid var(--main-color-dark);
 }
 
 .message__info {
@@ -93,7 +93,7 @@
 }
 
 .message-row--own .message__bubble {
-  background-color: var(--main-color);
+  background-color: var(--light-color);
   border-top-right-radius: 0;
   border-top-left-radius: 15px;
   margin-right: 0;
@@ -108,7 +108,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: white;
+  background-color: var(--main-color-light);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,7 +145,8 @@
   top: 10px;
 }
 .reply__column button {
-  background-color: var(--main-color);
+  background-color: var(--main-color-dark);
+  color: black;
   border: none;
   width: 30px;
   height: 30px;
@@ -179,9 +180,77 @@
 .reply:focus-within input {
   width: 90vw;
   transform: translateX(-12%) translateY(-100px);
-  border: 2px solid coral;
+  border: 3px solid var(--main-color);
 }
 
 .reply:focus-within {
   transform: translateY(80px);
+}
+
+.message__bubble-img {
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+}
+
+.action {
+  opacity: 0;
+  animation: fadeIn 0.8s linear forwards;
+}
+
+@keyframes talk {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    trnasform: none;
+    opacity: 1;
+  }
+}
+.action:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.action:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.action:nth-child(4) {
+  animation: talk 0.3s linear forwards;
+  animation-delay: 1.8s;
+}
+
+.action:nth-child(5) {
+  animation: talk 0.3s linear forwards;
+  animation-delay: 5s;
+}
+.action:nth-child(6) {
+  animation: talk 0.3s linear forwards;
+  animation-delay: 9s;
+}
+.action:nth-child(7) {
+  animation: talk 0.3s linear forwards;
+  animation-delay: 9.5s;
+}
+.action:nth-child(8) {
+  animation: talk 0.3s linear forwards;
+  animation-delay: 12s;
+}
+.action:nth-child(9) {
+  animation: talk 0.3s linear forwards;
+  animation-delay: 2s;
+}
+.action:nth-child(10) {
+  animation: talk 0.3s linear forwards;
+  animation-delay: 2s;
+}
+
+.dig {
+  position: absolute;
+  top: 490vh;
+  right: 100px;
+  width: 200px;
+  height: 200px;
 }

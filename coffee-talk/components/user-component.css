@@ -1,5 +1,6 @@
 .user-component {
   justify-content: space-between;
+  transition: all 0.2s ease-in-out;
 }
 
 .user-component,
@@ -55,4 +56,18 @@
 
 .user-component__title h4 {
   display: inline;
+}
+
+.user-component_subtitle {
+  margin-top: 8px;
+}
+
+.user-component:hover:not(.no-effect) {
+  transform: scale(1.05);
+  border-radius: 20px;
+  padding: 10px;
+  background-color: var(--main-color-light);
+}
+.user-component:not(.no-effect) {
+  cursor: pointer;
 }
