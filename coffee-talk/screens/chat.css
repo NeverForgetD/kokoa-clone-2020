@@ -224,25 +224,17 @@
 
 .action:nth-child(5) {
   animation: talk 0.3s linear forwards;
-  animation-delay: 5s;
+  animation-delay: 3s;
 }
 .action:nth-child(6) {
   animation: talk 0.3s linear forwards;
-  animation-delay: 9s;
+  animation-delay: 7s;
 }
 .action:nth-child(7) {
   animation: talk 0.3s linear forwards;
-  animation-delay: 9.5s;
+  animation-delay: 7.5s;
 }
 .action:nth-child(8) {
   animation: talk 0.3s linear forwards;
-  animation-delay: 12s;
-}
-.action:nth-child(9) {
-  animation: talk 0.3s linear forwards;
-  animation-delay: 2s;
-}
-.action:nth-child(10) {
-  animation: talk 0.3s linear forwards;
-  animation-delay: 2s;
+  animation-delay: 10s;
 }
