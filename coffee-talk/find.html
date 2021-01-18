@@ -9,11 +9,12 @@
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>No Sevice</span>
-        <i class="fas fa-wifi"></i>
+        <i class="fas fa-spinner spinner"></i>
+        <span>Hot!</span>
+        <i class="fas fa-mug-hot"></i>
       </div>
       <div class="status-bar__column">
-        <soan>18:43</soan>
+        <soan>10:14</soan>
       </div>
       <div class="status-bar__column">
         <span>90%</span>
@@ -26,7 +27,11 @@
       <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icons">
         <span><i class="fa-lg fas fa-search"></i></span>
-        <span><i class="fa-lg fas fa-cog"></i></span>
+        <span class="screen-header__cog"
+          ><a href="settings.html"
+            ><i class="fa-lg fas fa-cog"></i>
+            <div class="screen-header__cog-dot"></div></a
+        ></span>
       </div>
     </header>
 
@@ -37,7 +42,8 @@
           <span>QR Code</span>
         </div>
         <div class="icon-row__icon">
-          <i class="far fa-address-book"></i><span>Add by Contacts</span>
+          <i class="far fa-address-book"></i><span id="contacts1">Add by</span
+          ><span id="contacts2">Contacts</span>
         </div>
         <div class="icon-row__icon">
           <i class="far fa-id-card"></i><span>Add by ID</span>
@@ -60,8 +66,50 @@
         </div>
         <div class="open-post">
           <div class="open-post__column">
-            <h5 class="open-post__title">#BTS</h5>
-            <h6 class="open-post__hashtags">#bts#army#friends</h6>
+            <h5 class="open-post__title">#P</h5>
+            <h6 class="open-post__hashtags">#LATTE#</h6>
+            <div class="open-post__members">
+              <img src="" />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img src="chico.png" />
+              <div class="open-post__heart-count">
+                <i class="fa-xs fas fa-heart"></i>
+                <span>327</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#P</h5>
+            <h6 class="open-post__hashtags">#LATTE#</h6>
+            <div class="open-post__members">
+              <img src="" />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img src="chico.png" />
+              <div class="open-post__heart-count">
+                <i class="fa-xs fas fa-heart"></i>
+                <span>327</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#P</h5>
+            <h6 class="open-post__hashtags">#LATTE#</h6>
             <div class="open-post__members">
               <img src="" />
               <span class="open-post__member-count">802 members</span>
@@ -107,6 +155,12 @@
         </li>
       </ul>
     </nav>
+
+    <div id="splash-screen">
+      <i class="fas fa-mug-hot"></i>
+      <span>No Sugar, No Cream</span>
+      <span>That's Coffee!</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"

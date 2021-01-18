@@ -5,7 +5,9 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 5px 3px;
+  font-weight: bold;
 }
 .status-bar__column {
   width: 33%;
@@ -23,4 +25,17 @@
 }
 .status-bar__column .fa-battery-three-quarters {
   margin: 2px 5px;
+}
+
+@keyframes spinner-spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+.status-bar__column .spinner {
+  animation: spinner-spin 3s linear infinite;
 }

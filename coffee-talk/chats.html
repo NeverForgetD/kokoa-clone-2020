@@ -9,11 +9,12 @@
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>No Sevice</span>
-        <i class="fas fa-wifi"></i>
+        <i class="fas fa-spinner spinner"></i>
+        <span>Hot!</span>
+        <i class="fas fa-mug-hot"></i>
       </div>
       <div class="status-bar__column">
-        <soan>18:43</soan>
+        <soan>10:14</soan>
       </div>
       <div class="status-bar__column">
         <span>90%</span>
@@ -28,7 +29,11 @@
         <span><i class="fa-lg fas fa-search"></i></span>
         <span><i class="fa-lg far fa-comment-dots"></i></span>
         <span><i class="fa-lg fas fa-music"></i></span>
-        <span><i class="fa-lg fas fa-cog"></i></span>
+        <span class="screen-header__cog"
+          ><a href="settings.html"
+            ><i class="fa-lg fas fa-cog"></i>
+            <div class="screen-header__cog-dot"></div></a
+        ></span>
       </div>
     </header>
 
@@ -77,6 +82,10 @@
         </li>
       </ul>
     </nav>
+    <div id="splash-screen">
+      <i class="fas fa-mug-hot"></i>
+      <span>Brewing Coffee...</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"

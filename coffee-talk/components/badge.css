@@ -1,6 +1,6 @@
 .badge {
-  background-color: coral;
-  color: white;
+  background-color: var(--light-color);
+  color: var(--main-color);
   width: 30px;
   height: 30px;
   border-radius: 15px;
