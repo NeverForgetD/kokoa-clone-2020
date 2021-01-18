@@ -221,7 +221,6 @@
   animation: talk 0.3s linear forwards;
   animation-delay: 1.8s;
 }
-
 .action:nth-child(5) {
   animation: talk 0.3s linear forwards;
   animation-delay: 3s;
