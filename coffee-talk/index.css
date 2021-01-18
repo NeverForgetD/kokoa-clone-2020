@@ -11,6 +11,7 @@
 @import "components/icon-row.css";
 @import "components/alternative-screen-header.css";
 @import "components/not-mobile.css";
+@import "components/spash.css";
 
 /* Screens */
 @import "screens/variables.css";
@@ -24,10 +25,11 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: rgb(0, 0, 0, 0.8);
+  background-color: var(--main-color-light);
 }
 
 .welcome-header {
-  margin: 90px 0px;
+  margin: 110px 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -46,4 +48,9 @@ body {
 
 .main-screen {
   padding: 0 var(--horizontal-space);
+}
+
+.welcome-header__text:last-child {
+  margin-top: 15px;
+  font-size: 14px;
 }
