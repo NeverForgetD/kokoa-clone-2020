@@ -29,3 +29,9 @@
 .friends-screen__channel .user-component {
   margin-bottom: 30px;
 }
+
+/* use channel class as friends too */
+
+.this-is-friends-section .user-component:last-child {
+  margin-bottom: 120px;
+}

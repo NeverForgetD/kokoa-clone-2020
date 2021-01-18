@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: var(--main-color-light);
-  height: 500vh;
+  height: 400vh;
 }
 
 #chat-screen .alt-header,
@@ -180,7 +180,7 @@
 .reply:focus-within input {
   width: 90vw;
   transform: translateX(-12%) translateY(-100px);
-  border: 3px solid var(--main-color);
+  border: 3px solid var(--main-color-dark);
 }
 
 .reply:focus-within {
@@ -245,12 +245,4 @@
 .action:nth-child(10) {
   animation: talk 0.3s linear forwards;
   animation-delay: 2s;
-}
-
-.dig {
-  position: absolute;
-  top: 490vh;
-  right: 100px;
-  width: 200px;
-  height: 200px;
 }
