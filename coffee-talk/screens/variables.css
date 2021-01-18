@@ -1,6 +1,7 @@
 :root {
   --main-color: #6f4e37;
   --main-color-light: rgba(111, 78, 55, 0.3);
+  --main-color-dark: rgba(111, 78, 55, 0.5);
   --light-color: rgba(226, 208, 195);
 
   --gray-color: rgba(0, 0, 0, 0.4);

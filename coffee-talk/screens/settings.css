@@ -4,12 +4,15 @@
 }
 
 .settings__setting {
-  padding: 20px 0;
+  padding: 20px 5px;
+  box-sizing: border-box;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
 
 .settings__setting i {
@@ -19,4 +22,12 @@
 }
 .settings__setting-column:last-child {
   opacity: 0.5;
+}
+
+.settings__setting:hover {
+  transform: scale(1.1);
+  border: 3px solid var(--main-color);
+  border-radius: 15px;
+  background-color: var(--main-color-light);
+  margin: 5px 0;
 }

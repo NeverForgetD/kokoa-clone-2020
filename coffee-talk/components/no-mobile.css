@@ -1,4 +1,4 @@
-#not-mobile {
+#no-mobile {
   position: absolute;
   top: 0;
   z-index: 3;
@@ -12,7 +12,16 @@
 }
 
 @media screen and (max-width: 645px) {
-  #not-mobile {
+  #no-mobile {
     display: none;
   }
+}
+
+.no-mobile__coffee {
+  width: 10%;
+  height: 10%;
+}
+.no-mobile__hand {
+  width: 10%;
+  height: 10%;
 }
